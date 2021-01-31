@@ -44,7 +44,7 @@ template <typename T> bool Bag<T>::remove(const T& entry)
         {
             for(int j = i; j <= n; j++)
             {
-            item[j] == item[j+1]
+            item[j] == item[j+1];
             }
             n = n-1;
             return true;
