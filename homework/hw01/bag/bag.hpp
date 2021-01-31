@@ -24,6 +24,10 @@ public:
 
   bool contains(const T& entry) const;
 
+  private:
+  int n;
+  T item[100000];
+
 };
 
 #include "bag.tpp"
