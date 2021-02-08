@@ -1,5 +1,6 @@
 #ifndef BITSET_HPP
 #define BITSET_HPP
+#include <string>
 
 class Bitset{
 public:
@@ -41,8 +42,8 @@ public:
   std::string asString() const;
 
 private:
-
-  // TODO
+  int n;
+  bool* array;
 };
 
 #endif
