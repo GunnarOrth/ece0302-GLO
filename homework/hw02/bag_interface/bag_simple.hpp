@@ -1,9 +1,14 @@
 #ifndef STUDENT_BAG_HPP
 #define STUDENT_BAG_HPP
+<<<<<<< HEAD
+#include "abstract_bag.hpp"
+#include <cstdlib>
+=======
 
 #include "abstract_bag.hpp"
+>>>>>>> 520b2e5d6f42681d9f488467df242930a183b076
 
-template<typename T> class Bag{
+template<typename T> class Bag : public AbstractBag<T>{
 public:
 
   Bag();
