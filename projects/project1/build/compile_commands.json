@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/gunnar/starter-code-ece0302/projects/project1/build",
+  "command": "/usr/bin/c++    -g   -std=gnu++11 -o CMakeFiles/bitset-tests.dir/bitset_test.cpp.o -c /home/gunnar/starter-code-ece0302/projects/project1/bitset_test.cpp",
+  "file": "/home/gunnar/starter-code-ece0302/projects/project1/bitset_test.cpp"
+},
+{
+  "directory": "/home/gunnar/starter-code-ece0302/projects/project1/build",
+  "command": "/usr/bin/c++    -g   -std=gnu++11 -o CMakeFiles/bitset-tests.dir/bitset.cpp.o -c /home/gunnar/starter-code-ece0302/projects/project1/bitset.cpp",
+  "file": "/home/gunnar/starter-code-ece0302/projects/project1/bitset.cpp"
+}
+]

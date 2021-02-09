@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/gunnar/starter-code-ece0302/projects/project1/bitset.cpp
+bitset.hpp
+/home/gunnar/starter-code-ece0302/projects/project1/bitset.hpp
+
+/home/gunnar/starter-code-ece0302/projects/project1/bitset.hpp
+string
+-
+

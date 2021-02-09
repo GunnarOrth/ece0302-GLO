@@ -1,0 +1,5 @@
+/home/gunnar/starter-code-ece0302/projects/project1/CMakeFiles/rebuild_cache.dir
+/home/gunnar/starter-code-ece0302/projects/project1/CMakeFiles/edit_cache.dir
+/home/gunnar/starter-code-ece0302/projects/project1/CMakeFiles/test.dir
+/home/gunnar/starter-code-ece0302/projects/project1/CMakeFiles/submission.dir
+/home/gunnar/starter-code-ece0302/projects/project1/CMakeFiles/bitset-tests.dir
