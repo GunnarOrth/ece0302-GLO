@@ -6,6 +6,7 @@
 // write your test cases here
 TEST_CASE("Test case", "fancyPower"){
 
-  REQUIRE(true);
+  REQUIRE(fancyPower(2,4)==16);
   
+  REQUIRE(fancyPower(3,5)==125);
 }
