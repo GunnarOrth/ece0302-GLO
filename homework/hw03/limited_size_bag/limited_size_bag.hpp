@@ -40,8 +40,11 @@ public:
   // check if item is in the bag
   bool contains(const T& item) const;
 
-private:
+  T getItem(int i) const;
 
+private:
+  int n;
+  T array[5];
   // TODO
 };
 

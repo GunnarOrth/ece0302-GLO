@@ -1,0 +1,5 @@
+/home/gunnar/starter-code-ece0302/homework/hw03/limited_size_bag/build/CMakeFiles/rebuild_cache.dir
+/home/gunnar/starter-code-ece0302/homework/hw03/limited_size_bag/build/CMakeFiles/edit_cache.dir
+/home/gunnar/starter-code-ece0302/homework/hw03/limited_size_bag/build/CMakeFiles/test.dir
+/home/gunnar/starter-code-ece0302/homework/hw03/limited_size_bag/build/CMakeFiles/submission.dir
+/home/gunnar/starter-code-ece0302/homework/hw03/limited_size_bag/build/CMakeFiles/bag-tests.dir
