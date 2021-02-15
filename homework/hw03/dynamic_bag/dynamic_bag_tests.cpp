@@ -8,11 +8,11 @@ template class DynamicBag<int>;
 
 TEST_CASE("Calling all public members", "[DynamicBag]"){
   DynamicBag<int> b;
-
-  b.add(0);
+  REQUIRE(b.add(0)==true);
   b.remove(0);
-  b.isEmpty();
-  b.getCurrentSize();
+  REQUIRE(b.getFrequencyOf(0)==0);
+  REQUIRE(b.isEmpty()==true);
+  REQUIRE(b.getCurrentSize()==0);
   b.clear();
   b.getFrequencyOf(0);
   b.contains(0);

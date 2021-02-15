@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/gunnar/starter-code-ece0302/homework/hw03/dynamic_bag/build",
+  "command": "/usr/bin/c++    -g   -std=gnu++11 -o CMakeFiles/dynamic-bag-tests.dir/dynamic_bag_tests.cpp.o -c /home/gunnar/starter-code-ece0302/homework/hw03/dynamic_bag/dynamic_bag_tests.cpp",
+  "file": "/home/gunnar/starter-code-ece0302/homework/hw03/dynamic_bag/dynamic_bag_tests.cpp"
+}
+]

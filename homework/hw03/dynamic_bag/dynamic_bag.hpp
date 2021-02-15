@@ -11,13 +11,13 @@ public:
   DynamicBag();
   
   // copy constructor
-  DynamicBag(const DynamicBag& x);
+  DynamicBag(const DynamicBag& y);
     
   // destructor
   ~DynamicBag();
   
   // copy assignment
-  DynamicBag& operator=(DynamicBag& x);
+  DynamicBag& operator=(DynamicBag& y);
 
   // add an item to the bag
   bool add(const T & item);
@@ -40,9 +40,11 @@ public:
   // check if item is in the bag
   bool contains(const T& item) const;
 
+  T getItem(int i) const;
 private:
 
-  // TODO
+  int n,x;
+  T * array;
 };
 
 #include "dynamic_bag.tpp"
