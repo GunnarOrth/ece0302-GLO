@@ -1,0 +1,5 @@
+/home/gunnar/starter-code-ece0302/homework/hw03/dynamic_bag/CMakeFiles/rebuild_cache.dir
+/home/gunnar/starter-code-ece0302/homework/hw03/dynamic_bag/CMakeFiles/edit_cache.dir
+/home/gunnar/starter-code-ece0302/homework/hw03/dynamic_bag/CMakeFiles/test.dir
+/home/gunnar/starter-code-ece0302/homework/hw03/dynamic_bag/CMakeFiles/submission.dir
+/home/gunnar/starter-code-ece0302/homework/hw03/dynamic_bag/CMakeFiles/dynamic-bag-tests.dir
