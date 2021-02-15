@@ -1,0 +1,5 @@
+/home/gunnar/starter-code-ece0302/homework/hw03/fancy_power/CMakeFiles/rebuild_cache.dir
+/home/gunnar/starter-code-ece0302/homework/hw03/fancy_power/CMakeFiles/edit_cache.dir
+/home/gunnar/starter-code-ece0302/homework/hw03/fancy_power/CMakeFiles/test.dir
+/home/gunnar/starter-code-ece0302/homework/hw03/fancy_power/CMakeFiles/submission.dir
+/home/gunnar/starter-code-ece0302/homework/hw03/fancy_power/CMakeFiles/fancyPower-tests.dir
