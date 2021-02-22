@@ -1,0 +1,5 @@
+/home/gunnar/starter-code-ece0302/homework/hw04/array_list/CMakeFiles/rebuild_cache.dir
+/home/gunnar/starter-code-ece0302/homework/hw04/array_list/CMakeFiles/submission.dir
+/home/gunnar/starter-code-ece0302/homework/hw04/array_list/CMakeFiles/edit_cache.dir
+/home/gunnar/starter-code-ece0302/homework/hw04/array_list/CMakeFiles/test.dir
+/home/gunnar/starter-code-ece0302/homework/hw04/array_list/CMakeFiles/test_array_list.dir
