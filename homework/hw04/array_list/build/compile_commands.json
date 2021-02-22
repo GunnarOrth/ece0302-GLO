@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/gunnar/starter-code-ece0302/homework/hw04/array_list/build",
+  "command": "/usr/bin/c++    -g   -o CMakeFiles/test_array_list.dir/test_array_list.cpp.o -c /home/gunnar/starter-code-ece0302/homework/hw04/array_list/test_array_list.cpp",
+  "file": "/home/gunnar/starter-code-ece0302/homework/hw04/array_list/test_array_list.cpp"
+}
+]

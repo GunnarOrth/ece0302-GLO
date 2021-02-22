@@ -1,6 +1,5 @@
 #ifndef ARRAY_LIST_HPP
 #define ARRAY_LIST_HPP
-
 #include "abstract_list.hpp"
 
 template<typename T>
@@ -42,7 +41,8 @@ public:
   void setEntry(std::size_t position, const T& newValue);
 
 private:
-
+  std::vector<T> varray;
+  int n;
   // TODO
   
 };
