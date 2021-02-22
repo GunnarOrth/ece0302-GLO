@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/gunnar/starter-code-ece0302/homework/hw04/linked_list/b
 include CMakeFiles/submission.dir/progress.make
 
 CMakeFiles/submission:
-	cd /home/gunnar/starter-code-ece0302/homework/hw04/linked_list && /usr/bin/cmake -E tar cfv /home/gunnar/starter-code-ece0302/homework/hw04/linked_list/build/hw4_list_linked.zip --format=zip linked_list.tpp test_linked_list.cpp
+	cd /home/gunnar/starter-code-ece0302/homework/hw04/linked_list && /usr/bin/cmake -E tar cfv /home/gunnar/starter-code-ece0302/homework/hw04/linked_list/build/hw4_list_linked.zip --format=zip linked_list.hpp linked_list.tpp test_linked_list.cpp
 
 submission: CMakeFiles/submission
 submission: CMakeFiles/submission.dir/build.make
