@@ -45,10 +45,12 @@ public:
   // set the value of the item at position using 1-based indexing
   void setEntry(std::size_t position, const T& newValue);
 
+  Node<T>* getNodeAt(int position) const;
+
 private:
 
-  //TODO
-  
+  Node<T>* headPtr;
+  int itemCount;
 };
 
 #include "linked_list.tpp"
