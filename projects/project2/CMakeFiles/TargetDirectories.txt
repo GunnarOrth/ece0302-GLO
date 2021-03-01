@@ -1,0 +1,6 @@
+/home/gunnar/starter-code-ece0302/projects/project2/CMakeFiles/rebuild_cache.dir
+/home/gunnar/starter-code-ece0302/projects/project2/CMakeFiles/submission.dir
+/home/gunnar/starter-code-ece0302/projects/project2/CMakeFiles/edit_cache.dir
+/home/gunnar/starter-code-ece0302/projects/project2/CMakeFiles/test.dir
+/home/gunnar/starter-code-ece0302/projects/project2/CMakeFiles/FindPalindrome-main.dir
+/home/gunnar/starter-code-ece0302/projects/project2/CMakeFiles/FindPalindrome-tests.dir
