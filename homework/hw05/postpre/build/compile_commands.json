@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/gunnar/starter-code-ece0302/homework/hw05/postpre/build",
+  "command": "/usr/bin/c++    -g   -o CMakeFiles/postpre.dir/postpre.cpp.o -c /home/gunnar/starter-code-ece0302/homework/hw05/postpre/postpre.cpp",
+  "file": "/home/gunnar/starter-code-ece0302/homework/hw05/postpre/postpre.cpp"
+},
+{
+  "directory": "/home/gunnar/starter-code-ece0302/homework/hw05/postpre/build",
+  "command": "/usr/bin/c++    -g   -o CMakeFiles/postpre.dir/algebraic_expressions.cpp.o -c /home/gunnar/starter-code-ece0302/homework/hw05/postpre/algebraic_expressions.cpp",
+  "file": "/home/gunnar/starter-code-ece0302/homework/hw05/postpre/algebraic_expressions.cpp"
+}
+]

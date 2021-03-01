@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/gunnar/starter-code-ece0302/homework/hw05/postpre/algebraic_expressions.cpp
+string
+-
+iostream
+-
+cctype
+-
+algebraic_expressions.hpp
+/home/gunnar/starter-code-ece0302/homework/hw05/postpre/algebraic_expressions.hpp
+
+/home/gunnar/starter-code-ece0302/homework/hw05/postpre/algebraic_expressions.hpp
+string
+-
+
