@@ -1,0 +1,5 @@
+/home/gunnar/starter-code-ece0302/homework/hw05/postpre/CMakeFiles/rebuild_cache.dir
+/home/gunnar/starter-code-ece0302/homework/hw05/postpre/CMakeFiles/edit_cache.dir
+/home/gunnar/starter-code-ece0302/homework/hw05/postpre/CMakeFiles/test.dir
+/home/gunnar/starter-code-ece0302/homework/hw05/postpre/CMakeFiles/submission.dir
+/home/gunnar/starter-code-ece0302/homework/hw05/postpre/CMakeFiles/postpre.dir
