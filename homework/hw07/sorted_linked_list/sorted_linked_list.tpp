@@ -4,6 +4,7 @@
 template <typename T>
 SortedLinkedList<T>::SortedLinkedList(): LinkedList<T>()
 {
+	length = 0;
 }
 
 template <typename T>
@@ -40,23 +41,28 @@ std::size_t SortedLinkedList<T>::getLength()
 template <typename T>
 void SortedLinkedList<T>::insert(const T& item)
 {
+	bool x = LinkedList<T>::insert(length, item);
+	length++;
+	return;
   // todo
 }
 
 template <typename T>
 void SortedLinkedList<T>::remove(const T& item)
 {
-  if(isEmpty()) throw std::range_error("empty list in remove");
-  
+	int x = getPosition(item);
+	bool y = LinkedList<T>::remove(x);
+	length--;
+	return;
   // todo
 }
 
 template <typename T>
 void SortedLinkedList<T>::removeAt(std::size_t position)
 {
-  if(isEmpty()) throw std::range_error("empty list in remove");
-  
-  // todo
+	bool x = LinkedList<T>::remove(position);
+	length--;
+	return;
 }
 
 template <typename T>
@@ -68,12 +74,15 @@ void SortedLinkedList<T>::clear()
 template <typename T>
 T SortedLinkedList<T>::getEntry(std::size_t position)
 {
-  return LinkedList<T>::getEntry(position+1);
+  return LinkedList<T>::getEntry(position);
 }
 
 template <typename T>
 long int SortedLinkedList<T>::getPosition(const T& newValue)
 {
-  // todo
-  return 0;
+	
+  
+  return LinkedList<T>::getNodeAtItem(newValue);
 }
+
+

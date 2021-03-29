@@ -44,9 +44,14 @@ public:
 
   // set the value of the item at position using 1-based indexing
   void setEntry(std::size_t position, const T& newValue);
+  
+  Node<T>* getNodeAt(int position) const;
+  
+  int getNodeAtItem(const T& newValue) const;
 
 private:
-
+	Node<T> * headPtr;
+	int itemCount;
   //TODO
   
 };

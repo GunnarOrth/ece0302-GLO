@@ -49,6 +49,7 @@ public:
 
 private:
 
+	int length;
   // TODO
 
 };
