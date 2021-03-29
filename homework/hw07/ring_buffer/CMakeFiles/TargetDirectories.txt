@@ -1,0 +1,4 @@
+/home/gunnar/starter-code-ece0302/homework/hw07/ring_buffer/CMakeFiles/rebuild_cache.dir
+/home/gunnar/starter-code-ece0302/homework/hw07/ring_buffer/CMakeFiles/edit_cache.dir
+/home/gunnar/starter-code-ece0302/homework/hw07/ring_buffer/CMakeFiles/submission.dir
+/home/gunnar/starter-code-ece0302/homework/hw07/ring_buffer/CMakeFiles/test_ring_buffer.dir
