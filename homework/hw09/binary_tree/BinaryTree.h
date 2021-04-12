@@ -52,11 +52,7 @@ protected:
     {
     public:
         NodeType(){};
-        NodeType(const TreeItemType& nodeItem, NodeType* left = 0,
-            NodeType* right = 0)
-            : item(nodeItem)
-            , leftChildPtr(left)
-            , rightChildPtr(right)
+        NodeType(const TreeItemType& nodeItem, NodeType* left = 0, NodeType* right = 0) : item(nodeItem) , leftChildPtr(left) , rightChildPtr(right)
         {
         }
 
