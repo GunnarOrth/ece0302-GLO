@@ -1,0 +1,4 @@
+/home/gunnar/starter-code-ece0302/homework/hw09/binary_tree/CMakeFiles/rebuild_cache.dir
+/home/gunnar/starter-code-ece0302/homework/hw09/binary_tree/CMakeFiles/edit_cache.dir
+/home/gunnar/starter-code-ece0302/homework/hw09/binary_tree/CMakeFiles/submission.dir
+/home/gunnar/starter-code-ece0302/homework/hw09/binary_tree/CMakeFiles/testBinaryTree.dir
