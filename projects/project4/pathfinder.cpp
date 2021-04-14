@@ -22,23 +22,23 @@ int main(int argc, char *argv[])
 {
 	if (argc != 3)
 	{
-		std::cout << "Usage: compare" << "<first_input_filename> <second_output_filename>\n" << std::endl;
+		cout << "Usage: compare" << "<first_input_filename> <second_output_filename>\n" << endl;
 		return EXIT_FAILURE;
 	}
 	
-	//std::string input_file = argv[1];
-	//std::string output_file = argv[2];
-	std::string input_file = "maze00.png";
-	std::string output_file = "maze00output.png";
+	string input_file = argv[1];
+	string output_file = argv[2];
+	//string input_file = "maze00.png";
+	//string output_file = "maze00output.png";
 	
 	Image<Pixel> maze = readFromFile(input_file);
 	Image<Pixel> outmaze = readFromFile(input_file);
 	int r,c;
 	int n = 0;
 	
-	for(int i = 0; i <= maze.width(); i++)//s.initial
+	for(int i = 0; i < maze.width(); i++)//s.initial
 	 {
-		 for(int j = 0; j <= maze.height(); i++)
+		 for(int j = 0; j < maze.height(); i++)
 		 {
 			 if(maze(i,j) == RED)
 			 {
@@ -69,6 +69,7 @@ int main(int argc, char *argv[])
 	vector<coords> explored;
 	
 	bool check = true;
+	bool check2 = true;
 	while(check)
 	{
 		if(frontier.empty())//if frontier is empty return failure
@@ -89,33 +90,37 @@ int main(int argc, char *argv[])
 		coords d = x;
 		c.c++;
 		
-		if(actions(maze, a, explored))//return s_next
+		if(actions(maze, a, explored) && check2)//return s_next
 		{
 			check = false;
+			check2 = false;
 			outmaze(a.r,a.c) = GREEN;
 			writeToFile(outmaze, output_file);
 		}
 		frontier.push_back(a);//insert s_next into frontier
 		
-		if(actions(maze, b, explored))//return s_next
+		if(actions(maze, b, explored) && check2)//return s_next
 		{
 			check = false;
+			check2 = false;
 			outmaze(b.r,b.c) = GREEN;
 			writeToFile(outmaze, output_file);
 		}
 		frontier.push_back(b);//insert s_next into frontier
 		
-		if(actions(maze, c, explored))//return s_next
+		if(actions(maze, c, explored) && check2)//return s_next
 		{
 			check = false;
+			check2 = false;
 			outmaze(c.r,c.c) = GREEN;
 			writeToFile(outmaze, output_file);
 		}
 		frontier.push_back(c);//insert s_next into frontier
 		
-		if(actions(maze, d, explored))//return s_next
+		if(actions(maze, d, explored) && check2)//return s_next
 		{
 			check = false;
+			check2 = false;
 			outmaze(d.r,d.c) = GREEN;
 			writeToFile(outmaze, output_file);
 		}
@@ -131,7 +136,7 @@ int main(int argc, char *argv[])
 
 bool goal(Image<Pixel> im,int r,int c)
 {
-	if((r+1) == ((im.height()+1) || (r-1) == -1 || (c+1) == (im.width()+1) || (c-1) == -1) && (im(r,c) == WHITE || im(r,c) == RED))
+	if((r+1) == (im.height() || (r-1) == -1 || (c+1) == im.width() || (c-1) == -1) && (im(r,c) == WHITE || im(r,c) == RED))
 	{
 		return true;
 	}
