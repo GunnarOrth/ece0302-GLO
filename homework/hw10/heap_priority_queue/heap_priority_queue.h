@@ -30,19 +30,33 @@ private:
 template <typename T>
 bool HeapPriorityQueue<T>::isEmpty()
 {
-    //todo
-    return false;
+    return lst.isEmpty();
 }
 
 template <typename T>
 void HeapPriorityQueue<T>::add(const T& item)
 {
+	if(lst.getLength() == 0)
+	{
+		lst.insert(0, item);
+		return;
+	}
+	for(int i = 0; i < lst.getLength(); i++)
+	{
+		if(item < lst.getEntry(i))
+		{
+			lst.insert(i, item);
+			return;
+		}
+	}
+	lst.insert(lst.getLength(), item);
     //todo
 }
 
 template <typename T>
 void HeapPriorityQueue<T>::remove()
 {
+	lst.remove(lst.getLength()-1);
     //todo
 }
 
@@ -50,7 +64,7 @@ template <typename T>
 T HeapPriorityQueue<T>::peek()
 {
     //todo
-    return T();
+    return lst.getEntry(lst.getLength()-1);
 }
 
 
