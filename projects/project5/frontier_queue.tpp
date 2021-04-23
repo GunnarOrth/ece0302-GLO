@@ -6,7 +6,101 @@ template <typename T>
 State<T> frontier_queue<T>::pop() {
 
   //TODO
+  int pos = 0;
+  int cost = queue[0].getFCost();
   
+
+  for(int i = 0; i < queue.size(); i++)
+  {
+	  if(queue[i].getFCost() < cost)
+	  {
+		  cost = queue[i].getFCost();
+		  pos = i;
+	  }
+  }
+
+  if(queue.size() == 0)
+  {
+	  return queue[pos];
+  }
+  queue.erase(queue.begin()+pos);
+  
+  bool change = true;
+  bool end = true;
+  
+  while(change)
+  {
+	  int i = 0;
+	  change = false;
+	  
+	  while(end)
+	  {
+		  if((2*i + 1) == queue.size())
+		  {
+			  end = false;
+		  }
+		  else if((2*i + 2) == queue.size())
+		  {
+			  end = false;
+			  if(queue[i].getFCost() > queue[2*i+1].getFCost())
+			  {
+				  change = true;
+				  queue.push_back(queue[i]);
+				  
+				  queue[i] = queue[2*i+1];
+				  queue[2*i+1] = queue.back();
+				  queue.pop_back();
+			  }
+			  
+		  }
+		  else if((2*i + 3) == queue.size())
+		  {
+			  end = false;
+			  if(queue[i].getFCost() > queue[2*i+1].getFCost())
+			  {
+				  change = true;
+				  queue.push_back(queue[i]);
+				  
+				  queue[i] = queue[2*i+1];
+				  queue[2*i+1] = queue.back();
+				  queue.pop_back();
+			  }
+			  if(queue[i].getFCost() > queue[2*i+2].getFCost())
+			  {
+				  change = true;
+				  queue.push_back(queue[i]);
+				  
+				  queue[i] = queue[2*i+2];
+				  queue[2*i+2] = queue.back();
+				  queue.pop_back();
+			  }
+		  }
+		  else
+		  {
+			  if(queue[i].getFCost() > queue[2*i+1].getFCost())
+			  {
+				  change = true;
+				  queue.push_back(queue[i]);
+				  
+				  queue[i] = queue[2*i+1];
+				  queue[2*i+1] = queue.back();
+				  queue.pop_back();
+			  }
+			  if(queue[i].getFCost() > queue[2*i+2].getFCost())
+			  {
+				  change = true;
+				  queue.push_back(queue[i]);
+				  
+				  queue[i] = queue[2*i+2];
+				  queue[2*i+2] = queue.back();
+				  queue.pop_back();
+			  }
+		  }
+		  i++;
+	  }
+  }
+  
+  return queue[pos];
   //implement this the same way we implemented pop in the heap lecture. Compare using getFCost
 
   // needs return statement
@@ -16,34 +110,124 @@ State<T> frontier_queue<T>::pop() {
 template <typename T>
 void frontier_queue<T>::push(const T &p, std::size_t cost, std::size_t heur) {
 
+	State obj(p, cost, heur);
+	queue.push_back(obj);
+	
+	bool change = true;
+  bool end = true;
+  
+  while(change)
+  {
+	  int i = 0;
+	  change = false;
+	  
+	  while(end)
+	  {
+		  if((2*i + 1) == queue.size())
+		  {
+			  end = false;
+		  }
+		  else if((2*i + 2) == queue.size())
+		  {
+			  end = false;
+			  if(queue[i].getFCost() > queue[2*i+1].getFCost())
+			  {
+				  change = true;
+				  queue.push_back(queue[i]);
+				  
+				  queue[i] = queue[2*i+1];
+				  queue[2*i+1] = queue.back();
+				  queue.pop_back();
+			  }
+			  
+		  }
+		  else if((2*i + 3) == queue.size())
+		  {
+			  end = false;
+			  if(queue[i].getFCost() > queue[2*i+1].getFCost())
+			  {
+				  change = true;
+				  queue.push_back(queue[i]);
+				  
+				  queue[i] = queue[2*i+1];
+				  queue[2*i+1] = queue.back();
+				  queue.pop_back();
+			  }
+			  if(queue[i].getFCost() > queue[2*i+2].getFCost())
+			  {
+				  change = true;
+				  queue.push_back(queue[i]);
+				  
+				  queue[i] = queue[2*i+2];
+				  queue[2*i+2] = queue.back();
+				  queue.pop_back();
+			  }
+		  }
+		  else
+		  {
+			  if(queue[i].getFCost() > queue[2*i+1].getFCost())
+			  {
+				  change = true;
+				  queue.push_back(queue[i]);
+				  
+				  queue[i] = queue[2*i+1];
+				  queue[2*i+1] = queue.back();
+				  queue.pop_back();
+			  }
+			  if(queue[i].getFCost() > queue[2*i+2].getFCost())
+			  {
+				  change = true;
+				  queue.push_back(queue[i]);
+				  
+				  queue[i] = queue[2*i+2];
+				  queue[2*i+2] = queue.back();
+				  queue.pop_back();
+			  }
+		  }
+		  i++;
+	  }
+  }
   //TODO
   
-  //implement this the same way we implemented pop in the heap lecture. Compare using getFCost
+  //implement this the same way we implemented push in the heap lecture.
 
 }
 
 template <typename T>
 bool frontier_queue<T>::empty() {
 
-  //TODO
-
-  return true;
+  if(queue.empty())
+  {
+	  return true;
+  }
+  return false;
 }
 
 template <typename T> 
 bool frontier_queue<T>::contains(const T &p) {
 
-  //TODO
-
+  for(int i = 0; i < queue.size(); i++)
+  {
+	  if(p == queue[i].getValue())
+	  {
+		  return true;
+	  }
+  }
   return false;
-
 }
 
 template <typename T>
 void frontier_queue<T>::replaceif(const T &p, std::size_t cost) {
 
-  //TODO
-
+ for(int i = 0; i < queue.size(); i++)
+  {
+	  if(cost < queue[i].getPathCost())
+	  {
+		  State obj(p, cost, queue[i].getFCost()-queue[i].getPathCost());
+		  queue[i] = obj;
+		  return;
+	  }
+  }
 }
 
 
