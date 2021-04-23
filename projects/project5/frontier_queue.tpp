@@ -6,7 +6,8 @@ template <typename T>
 State<T> frontier_queue<T>::pop() {
 
   //TODO
-  queue.erase(queue.begin()+pos);
+  State<T> obj(queue[0].getValue(), queue[0].getPathCost(), queue[0].getFCost() - queue[0].getPathCost());
+  queue.erase(queue.begin());
   
   bool change = true;
   bool end = true;
@@ -83,7 +84,7 @@ State<T> frontier_queue<T>::pop() {
 	  }
   }
   
-  return queue[pos];
+  return obj;
   //implement this the same way we implemented pop in the heap lecture. Compare using getFCost
 
   // needs return statement
@@ -93,10 +94,10 @@ State<T> frontier_queue<T>::pop() {
 template <typename T>
 void frontier_queue<T>::push(const T &p, std::size_t cost, std::size_t heur) {
 
-	State<T> obj(p, cost, heur);
-	queue.push_back(obj);
+  State<T> obj(p, cost, heur);
+  queue.push_back(obj);
 	
-	bool change = true;
+  bool change = true;
   bool end = true;
   
   while(change)
