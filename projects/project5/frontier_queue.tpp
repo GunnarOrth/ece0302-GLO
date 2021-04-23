@@ -11,6 +11,10 @@ State<T> frontier_queue<T>::pop() {
   
   bool change = true;
   bool end = true;
+  if(queue.size() == 0)
+  {
+	  return obj;
+  }
   
   while(change)
   {

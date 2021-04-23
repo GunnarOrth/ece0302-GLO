@@ -1,0 +1,6 @@
+/home/gunnar/starter-code-ece0302/projects/project5/CMakeFiles/rebuild_cache.dir
+/home/gunnar/starter-code-ece0302/projects/project5/CMakeFiles/edit_cache.dir
+/home/gunnar/starter-code-ece0302/projects/project5/CMakeFiles/test.dir
+/home/gunnar/starter-code-ece0302/projects/project5/CMakeFiles/submission.dir
+/home/gunnar/starter-code-ece0302/projects/project5/CMakeFiles/test_solver.dir
+/home/gunnar/starter-code-ece0302/projects/project5/CMakeFiles/test_frontier_queue.dir
