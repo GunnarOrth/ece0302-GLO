@@ -6,23 +6,6 @@ template <typename T>
 State<T> frontier_queue<T>::pop() {
 
   //TODO
-  int pos = 0;
-  int cost = queue[0].getFCost();
-  
-
-  for(int i = 0; i < queue.size(); i++)
-  {
-	  if(queue[i].getFCost() < cost)
-	  {
-		  cost = queue[i].getFCost();
-		  pos = i;
-	  }
-  }
-
-  if(queue.size() == 0)
-  {
-	  return queue[pos];
-  }
   queue.erase(queue.begin()+pos);
   
   bool change = true;
@@ -110,7 +93,7 @@ State<T> frontier_queue<T>::pop() {
 template <typename T>
 void frontier_queue<T>::push(const T &p, std::size_t cost, std::size_t heur) {
 
-	State obj(p, cost, heur);
+	State<T> obj(p, cost, heur);
 	queue.push_back(obj);
 	
 	bool change = true;
@@ -223,7 +206,7 @@ void frontier_queue<T>::replaceif(const T &p, std::size_t cost) {
   {
 	  if(cost < queue[i].getPathCost())
 	  {
-		  State obj(p, cost, queue[i].getFCost()-queue[i].getPathCost());
+		  State<T> obj(p, cost, queue[i].getFCost()-queue[i].getPathCost());
 		  queue[i] = obj;
 		  return;
 	  }
